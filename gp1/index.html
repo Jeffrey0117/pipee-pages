@@ -1,0 +1,8 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>GP Multiplex Test</title>
+<link rel="stylesheet" href="/app.css">
+</head><body>
+<h1 id="t">github-pages 寄生測試</h1>
+<p>root-relative CSS + relative asset 都該透過 basePath proxy 對到</p>
+<img src="sub/pic.svg" width="40">
+<script>fetch('/data.json').then(r=>r.json()).then(d=>document.getElementById('t').textContent=d.msg)</script>
+</body></html>
